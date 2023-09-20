@@ -5,6 +5,7 @@ import useArray from './customArray'
 
 
 export default function Home() {
+  //  CustomHook for different array functionalities!
   const { ispending, shellSort, bubbleSort, insertionSort, selectionSort, quickSort, handleArr, setArr, arr, merge, mergeSort, handleMerge, handlequick, size, changeSize } = useArray([]);
   let counter = 0;
 

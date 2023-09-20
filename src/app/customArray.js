@@ -3,15 +3,14 @@ import { useTransition, useState, useEffect } from "react";
 export default function useArray(defval) {
     const [arr, setArr] = useState(defval);
     const [ispending, startTransition] = useTransition();
-    const [size,setSize]=useState(6)
-
+    const [size, setSize] = useState(6)
+    //  Runs everytime our arr changes!
     useEffect(() => {
         setArr(arr);
     }, [arr])
-
-    function changeSize()
-    {
-       return size===6? setSize(4):setSize(6);
+    // Function to Change Bar-Size!
+    function changeSize() {
+        return size === 6 ? setSize(4) : setSize(6);
 
     }
     //Function to generate New Random array
@@ -156,7 +155,7 @@ export default function useArray(defval) {
 
 
     // Returning CustomHook functionalities
-    return { arr, ispending,changeSize,size, shellSort, bubbleSort, handleArr, selectionSort, insertionSort, quickSort, setArr, merge, mergeSort, handleMerge, handlequick }
+    return { arr, ispending, changeSize, size, shellSort, bubbleSort, handleArr, selectionSort, insertionSort, quickSort, setArr, merge, mergeSort, handleMerge, handlequick }
 
 
 }
