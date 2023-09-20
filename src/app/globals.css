@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bar-container {
+  display: flex;
+  align-items: flex-end;
+  height: 600px;
+  margin-top: 2%;
+  font-family: monospace;
+  font-size: 1rem;
+  background-color: rgba(20, 92, 173, 0.418);
+}
+.bar {
+  flex:1;
+  margin: 0px 6px;
+  background-color: teal;
+}
